@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ScyE Mutation Library</title>
+<style>
+  body {
+    font-family: -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #222;
+    background: #fafafa;
+  }
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .logo {
+    height: 60px;
+    width: auto;
+  }
+  h1 { font-size: 1.4em; margin: 0; }
+  p.sub { color: #666; margin-top: 4px; margin-bottom: 0; }
+  label { display: block; font-weight: 600; margin-top: 16px; margin-bottom: 4px; }
+  textarea, input, select {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8px;
+    font-family: monospace;
+    font-size: 0.9em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  textarea { height: 90px; }
+  .row { display: flex; gap: 16px; }
+  .row > div { flex: 1; }
+  button {
+    margin-top: 20px;
+    padding: 10px 18px;
+    background: #2f6f4f;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  button:hover { background: #255a3f; }
+  button:disabled { background: #999; cursor: default; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 16px;
+    font-size: 0.9em;
+  }
+  th, td {
+    border: 1px solid #ddd;
+    padding: 6px 8px;
+    text-align: left;
+    vertical-align: top;
+  }
+  th { background: #eef3ef; }
+  .mono { font-family: monospace; font-size: 0.85em; word-break: break-all; }
+  .variant-row { cursor: pointer; }
+  .variant-row:hover { background: #f1f6f2; }
+  .detail-row td {
+    background: #f7faf8;
+    padding: 14px;
+  }
+  .hidden { display: none; }
+  .seq {
+    line-height: 1.6em;
+    word-break: break-all;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 6px 0 14px 0;
+  }
+  .seq mark {
+    background: #ffd6a5;
+    color: #7a3b00;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
+  .badge {
+    display: inline-block;
+    padding: 1px 6px;
+    border-radius: 10px;
+    font-size: 0.75em;
+    font-weight: 600;
+  }
+  .badge.cons { background: #dff2e1; color: #226b2e; }
+  .badge.rad { background: #fbe1e1; color: #9c2b2b; }
+  .badge.stable { background: #dff2e1; color: #226b2e; }
+  .badge.unstable { background: #fbe1e1; color: #9c2b2b; }
+  .badge.fallback { background: #fff3cd; color: #7a5c00; }
+  .props-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap: 8px;
+    margin-bottom: 14px;
+  }
+  .props-grid div {
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  .props-grid .label { font-size: 0.75em; color: #888; display: block; }
+  .props-grid .value { font-size: 0.95em; font-weight: 600; }
+  .error { color: #9c2b2b; font-weight: 600; margin-top: 16px; }
+  .model-desc { font-size: 0.8em; color: #666; margin-top: 4px; }
+
+  .tabs {
+    display: flex;
+    gap: 4px;
+    margin-top: 32px;
+    border-bottom: 2px solid #ddd;
+  }
+  .tab {
+    padding: 8px 16px;
+    cursor: pointer;
+    background: #eee;
+    border: 1px solid #ddd;
+    border-bottom: none;
+    border-radius: 6px 6px 0 0;
+    font-size: 0.9em;
+    color: #444;
+  }
+  .tab.active {
+    background: #fff;
+    color: #2f6f4f;
+    font-weight: 700;
+    border-bottom: 2px solid #fff;
+    margin-bottom: -2px;
+  }
+  .panel { display: none; }
+  .panel.active { display: block; }
+
+  .runs-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+  }
+  .runs-toolbar button.secondary {
+    background: #567;
+    margin-top: 0;
+  }
+  .runs-toolbar button.secondary:hover { background: #445566; }
+  .runs-toolbar button.danger {
+    background: #9c2b2b;
+    margin-top: 0;
+  }
+  .runs-toolbar button.danger:hover { background: #7c2020; }
+
+  .run-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 10px 14px;
+    margin-top: 10px;
+    gap: 12px;
+  }
+  .run-card.selected { border-color: #2f6f4f; background: #f4fbf6; }
+  .run-card .run-meta { flex: 1; }
+  .run-card .run-title { font-weight: 700; font-size: 0.95em; }
+  .run-card .run-sub { font-size: 0.78em; color: #777; margin-top: 2px; }
+  .run-card .run-actions { display: flex; gap: 6px; align-items: center; }
+  .run-card input[type=checkbox] { width: auto; }
+  .run-card button {
+    margin-top: 0;
+    padding: 5px 10px;
+    font-size: 0.8em;
+  }
+  .run-card button.danger { background: #9c2b2b; }
+  .run-card button.danger:hover { background: #7c2020; }
+
+  .source-tag {
+    display: inline-block;
+    font-size: 0.72em;
+    color: #567;
+    background: #eef2fa;
+    border-radius: 8px;
+    padding: 1px 6px;
+    margin-left: 6px;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-container">
+  <img class="logo" src="SPC_IGEM.png" alt="SPC iGEM Logo">
+  <div>
+    <h1>ScyE Mutation Library</h1>
+    <p class="sub">Generate, score, and rank enzyme variants in silico.</p>
+  </div>
+</div>
+
+<label for="backendUrl">Backend URL</label>
+<input id="backendUrl" value="http://localhost:5000">
+
+<label for="seq">Base sequence</label>
+<textarea id="seq" placeholder="Enter amino acid sequence..."></textarea>
+
+<div class="row">
+  <div>
+    <label for="numVariants">Number of variants</label>
+    <input id="numVariants" type="number" value="10" min="1" max="200">
+  </div>
+  <div>
+    <label for="model">Predictor model</label>
+    <select id="model">
+      <option value="ensemble_all">Ensemble Consensus (ESM2-150M + ESMFold + Biopython)</option>
+      <option value="esm2_8m">ESM2-8M</option>
+      <option value="esm2_35m">ESM2-35M</option>
+      <option value="esm2_150m">ESM2-150M</option>
+      <option value="esm2_650m">ESM2-650M</option>
+      <option value="esmfold">ESMFold v1</option>
+      <option value="alphafold2">AlphaFold 2</option>
+      <option value="heuristic" selected>Physicochemical heuristic (Biopython)</option>
+      <option value="random">Random baseline</option>
+    </select>
+    <div id="modelDesc" class="model-desc"></div>
+  </div>
+</div>
+
+<label for="runLabel">Run label</label>
+<input id="runLabel">
+
+<button id="runBtn" onclick="runPipeline()">Generate &amp; rank library</button>
+<span id="status" style="margin-left: 10px; color: #666;"></span>
+
+<div class="tabs">
+  <div class="tab active" id="tabNew" onclick="switchTab('new')">This run</div>
+  <div class="tab" id="tabSaved" onclick="switchTab('saved')">Saved runs</div>
+  <div class="tab" id="tabCombined" onclick="switchTab('combined')">Combined leaderboard</div>
+</div>
+
+<div id="panelNew" class="panel active">
+  <div id="results"></div>
+</div>
+
+<div id="panelSaved" class="panel">
+  <div class="runs-toolbar">
+    <button class="secondary" onclick="loadSavedRuns()">Refresh</button>
+    <span id="savedRunsStatus" style="color: #666; font-size: 0.85em;"></span>
+  </div>
+  <div id="savedRunsList"></div>
+</div>
+
+<div id="panelCombined" class="panel">
+  <div class="runs-toolbar">
+    <button class="secondary" onclick="loadCombinedLeaderboard()">Build combined leaderboard</button>
+    <span id="combinedStatus" style="color: #666; font-size: 0.85em;"></span>
+  </div>
+  <div id="combinedResults"></div>
+</div>
+
+<script>
+let currentModelInfo = {};
+let selectedRunIds = new Set();
+
+async function loadModels() {
+  const backend = document.getElementById("backendUrl").value.replace(/\/$/, "");
+  try {
+    const res = await fetch(`${backend}/api/models`);
+    const models = await res.json();
+    models.forEach(m => currentModelInfo[m.id] = m);
+    updateModelDesc();
+  } catch (e) {}
+}
+
+function updateModelDesc() {
+  const modelId = document.getElementById("model").value;
+  const info = currentModelInfo[modelId];
+  document.getElementById("modelDesc").textContent = info ? info.description : "";
+}
+
+document.getElementById("model").addEventListener("change", updateModelDesc);
+document.getElementById("backendUrl").addEventListener("change", loadModels);
+loadModels();
+
+async function runPipeline() {
+  const backend = document.getElementById("backendUrl").value.replace(/\/$/, "");
+  const sequence = document.getElementById("seq").value;
+  const num_variants = parseInt(document.getElementById("numVariants").value, 10) || 10;
+  const model = document.getElementById("model").value;
+  const label = document.getElementById("runLabel").value.trim();
+
+  const btn = document.getElementById("runBtn");
+  const status = document.getElementById("status");
+  const resultsDiv = document.getElementById("results");
+  btn.disabled = true;
+  status.textContent = "Running pipeline...";
+  resultsDiv.innerHTML = "";
+
+  try {
+    const res = await fetch(`${backend}/api/run`, {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ sequence, num_variants, model, label, save: true })
+    });
+    if (!res.ok) {
+      const err = await res.json().catch(() => ({}));
+      throw new Error(err.error || `Request failed (${res.status})`);
+    }
+    const data = await res.json();
+    let statusMsg = `Done - scored with ${data.model.label}`;
+    if (data.run_id) {
+      statusMsg += ` — saved as run ${data.run_id.slice(0, 8)}`;
+    } else if (data.save_error) {
+      statusMsg += ` — (not saved: ${data.save_error})`;
+    }
+    status.textContent = statusMsg;
+    renderResults(data.variants);
+  } catch (e) {
+    status.textContent = "";
+    resultsDiv.innerHTML = `<p class="error">Could not reach backend at ${backend}: ${e.message}.</p>`;
+  } finally {
+    btn.disabled = false;
+  }
+}
+
+function switchTab(name) {
+  const tabs = { new: ["tabNew", "panelNew"], saved: ["tabSaved", "panelSaved"], combined: ["tabCombined", "panelCombined"] };
+  Object.entries(tabs).forEach(([key, [tabId, panelId]]) => {
+    document.getElementById(tabId).classList.toggle("active", key === name);
+    document.getElementById(panelId).classList.toggle("active", key === name);
+  });
+  if (name === "saved") loadSavedRuns();
+}
+
+async function loadSavedRuns() {
+  const backend = document.getElementById("backendUrl").value.replace(/\/$/, "");
+  const statusEl = document.getElementById("savedRunsStatus");
+  const listEl = document.getElementById("savedRunsList");
+  statusEl.textContent = "Loading saved runs...";
+  try {
+    const res = await fetch(`${backend}/api/runs`);
+    if (!res.ok) throw new Error(`Request failed (${res.status})`);
+    const runs = await res.json();
+    statusEl.textContent = `${runs.length} saved run${runs.length === 1 ? "" : "s"} on disk`;
+    if (runs.length === 0) {
+      listEl.innerHTML = `<p class="sub">No saved runs found.</p>`;
+      return;
+    }
+    listEl.innerHTML = runs.map(r => {
+      const checked = selectedRunIds.has(r.run_id) ? "checked" : "";
+      const seqPreview = (r.base_sequence || "").slice(0, 24) + ((r.base_sequence || "").length > 24 ? "…" : "");
+      const when = r.created_at ? new Date(r.created_at).toLocaleString() : "unknown time";
+      return `
+        <div class="run-card ${selectedRunIds.has(r.run_id) ? "selected" : ""}" id="runcard-${r.run_id}">
+          <input type="checkbox" ${checked} onchange="toggleRunSelected('${r.run_id}')">
+          <div class="run-meta">
+            <div class="run-title">${r.label || r.model?.label || r.run_id}</div>
+            <div class="run-sub">${when} · ${r.num_variants} variants · model: ${r.model?.label || r.model?.id || "?"} · best stability: ${r.best_stability_score} · seq: <span class="mono">${seqPreview}</span></div>
+          </div>
+          <div class="run-actions">
+            <button class="secondary" onclick="viewRun('${r.run_id}')">View</button>
+            <button class="danger" onclick="deleteRun('${r.run_id}')">Delete</button>
+          </div>
+        </div>`;
+    }).join("");
+  } catch (e) {
+    statusEl.textContent = "";
+    listEl.innerHTML = `<p class="error">Could not load saved runs from ${backend}: ${e.message}.</p>`;
+  }
+}
+
+function toggleRunSelected(runId) {
+  if (selectedRunIds.has(runId)) {
+    selectedRunIds.delete(runId);
+  } else {
+    selectedRunIds.add(runId);
+  }
+  const card = document.getElementById(`runcard-${runId}`);
+  if (card) card.classList.toggle("selected", selectedRunIds.has(runId));
+}
+
+async function viewRun(runId) {
+  const backend = document.getElementById("backendUrl").value.replace(/\/$/, "");
+  const statusEl = document.getElementById("savedRunsStatus");
+  statusEl.textContent = "Loading run detail...";
+  try {
+    const res = await fetch(`${backend}/api/runs/${runId}`);
+    if (!res.ok) throw new Error(`Request failed (${res.status})`);
+    const record = await res.json();
+    statusEl.textContent = `Viewing run ${runId.slice(0, 8)} (${record.model?.label || record.model?.id})`;
+    switchTabWithoutReload("new");
+    renderResults(record.variants);
+  } catch (e) {
+    statusEl.textContent = `Could not load run: ${e.message}`;
+  }
+}
+
+function switchTabWithoutReload(name) {
+  const tabs = { new: ["tabNew", "panelNew"], saved: ["tabSaved", "panelSaved"], combined: ["tabCombined", "panelCombined"] };
+  Object.entries(tabs).forEach(([key, [tabId, panelId]]) => {
+    document.getElementById(tabId).classList.toggle("active", key === name);
+    document.getElementById(panelId).classList.toggle("active", key === name);
+  });
+}
+
+async function deleteRun(runId) {
+  if (!confirm("Delete this saved run permanently?")) return;
+  const backend = document.getElementById("backendUrl").value.replace(/\/$/, "");
+  try {
+    const res = await fetch(`${backend}/api/runs/${runId}`, { method: "DELETE" });
+    if (!res.ok) throw new Error(`Request failed (${res.status})`);
+    selectedRunIds.delete(runId);
+    loadSavedRuns();
+  } catch (e) {
+    document.getElementById("savedRunsStatus").textContent = `Could not delete run: ${e.message}`;
+  }
+}
+
+async function loadCombinedLeaderboard() {
+  const backend = document.getElementById("backendUrl").value.replace(/\/$/, "");
+  const statusEl = document.getElementById("combinedStatus");
+  const resultsDiv = document.getElementById("combinedResults");
+  statusEl.textContent = "Building combined leaderboard...";
+  resultsDiv.innerHTML = "";
+  try {
+    let url = `${backend}/api/runs/combined`;
+    if (selectedRunIds.size > 0) {
+      url += `?run_ids=${Array.from(selectedRunIds).join(",")}`;
+    }
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Request failed (${res.status})`);
+    const data = await res.json();
+    statusEl.textContent = `Pooled ${data.num_variants} variants from ${data.num_runs} run${data.num_runs === 1 ? "" : "s"}`;
+    renderCombinedResults(data.variants);
+  } catch (e) {
+    statusEl.textContent = "";
+    resultsDiv.innerHTML = `<p class="error">Could not build combined leaderboard: ${e.message}</p>`;
+  }
+}
+
+function renderCombinedResults(variants) {
+  const resultsDiv = document.getElementById("combinedResults");
+  if (!variants || variants.length === 0) {
+    resultsDiv.innerHTML = `<p class="sub">No variants found for the selected runs.</p>`;
+    return;
+  }
+  let html = `<h2>Combined Leaderboard</h2><table>
+    <tr><th></th><th>Rank</th><th>Variant</th><th>Stability</th><th>Solubility</th><th>Mutations</th><th>Source run</th></tr>`;
+  variants.forEach((v, idx) => {
+    const mutSummary = v.mutations.map(m => `${m.original_aa}${m.position_1based}${m.mutated_aa}`).join(", ");
+    const fallbackBadge = v.used_fallback ? `<span class="badge fallback">proxy used</span>` : "";
+    const runLabel = v.source_run_label || (v.source_run_id ? v.source_run_id.slice(0, 8) : "?");
+    html += `
+      <tr class="variant-row" onclick="toggleCombinedDetail(${idx})">
+        <td>▸</td>
+        <td>${v.combined_rank}</td>
+        <td>${v.variant_id}</td>
+        <td>${v.stability_score} ${fallbackBadge}</td>
+        <td>${v.solubility_score}</td>
+        <td class="mono">${mutSummary}</td>
+        <td><span class="source-tag">${runLabel}</span></td>
+      </tr>
+      <tr id="combined-detail-${idx}" class="detail-row hidden">
+        <td colspan="7">
+          ${breakdownTable(v.model_breakdown)}
+          <strong>Mutated Sequence</strong>
+          <div class="seq">${highlightSequence(v.sequence, v.mutations)}</div>
+          <strong>Mutations</strong>
+          ${mutationsTable(v.mutations)}
+          <strong>Computed Properties</strong>
+          ${propsGrid(v.properties, v.deltas_vs_wild_type)}
+        </td>
+      </tr>`;
+  });
+  html += "</table>";
+  resultsDiv.innerHTML = html;
+}
+
+function toggleCombinedDetail(idx) {
+  const row = document.getElementById(`combined-detail-${idx}`);
+  row.classList.toggle("hidden");
+}
+
+function highlightSequence(sequence, mutations) {
+  const positions = new Map(mutations.map(m => [m.position, m]));
+  let html = "";
+  for (let i = 0; i < sequence.length; i++) {
+    if (positions.has(i)) {
+      const m = positions.get(i);
+      html += `<mark title="${m.original_aa}${m.position_1based}${m.mutated_aa}">${sequence[i]}</mark>`;
+    } else {
+      html += sequence[i];
+    }
+  }
+  return html;
+}
+
+function propsGrid(props, deltas) {
+  const fmtDelta = (v) => (v > 0 ? `+${v}` : `${v}`);
+  return `
+    <div class="props-grid">
+      <div><span class="label">Molecular Weight</span><span class="value">${props.molecular_weight} Da ${deltas ? `(${fmtDelta(deltas.molecular_weight)})` : ""}</span></div>
+      <div><span class="label">Isoelectric Point (pI)</span><span class="value">${props.isoelectric_point} ${deltas ? `(${fmtDelta(deltas.isoelectric_point)})` : ""}</span></div>
+      <div><span class="label">Instability Index</span><span class="value">${props.instability_index}
+        <span class="badge ${props.instability_classification}">${props.instability_classification}</span></span></div>
+      <div><span class="label">GRAVY (Hydropathy)</span><span class="value">${props.gravy}</span></div>
+      <div><span class="label">Aromaticity</span><span class="value">${props.aromaticity}</span></div>
+      <div><span class="label">2° Structure (H/T/S)</span><span class="value">${props.secondary_structure_fraction.helix} / ${props.secondary_structure_fraction.turn} / ${props.secondary_structure_fraction.sheet}</span></div>
+    </div>`;
+}
+
+function breakdownTable(breakdown) {
+  if (!breakdown || Object.keys(breakdown).length <= 1) return "";
+  let rows = Object.entries(breakdown).map(([mod, score]) => `
+    <tr><td><strong>${mod}</strong></td><td>${score}</td></tr>
+  `).join("");
+  return `
+    <div style="margin-bottom: 12px;">
+      <strong>Model Score Breakdown:</strong>
+      <table style="width: auto; margin-top: 4px;">
+        <tr><th>Model</th><th>Score</th></tr>
+        ${rows}
+      </table>
+    </div>`;
+}
+
+function mutationsTable(mutations) {
+  let rows = mutations.map(m => `
+    <tr>
+      <td>${m.original_aa}${m.position_1based}${m.mutated_aa}</td>
+      <td>${m.group_change}</td>
+      <td>${m.blosum62}</td>
+      <td><span class="badge ${m.conservative ? "cons" : "rad"}">${m.conservative ? "conservative" : "radical"}</span></td>
+    </tr>`).join("");
+  return `
+    <table>
+      <tr><th>Mutation</th><th>Group Change</th><th>BLOSUM62</th><th>Type</th></tr>
+      ${rows}
+    </table>`;
+}
+
+function renderResults(variants) {
+  let html = `<h2>Results</h2><table>
+    <tr><th></th><th>Rank</th><th>Variant</th><th>Stability</th><th>Solubility</th><th>Mutations</th></tr>`;
+  variants.forEach((v, idx) => {
+    const mutSummary = v.mutations.map(m => `${m.original_aa}${m.position_1based}${m.mutated_aa}`).join(", ");
+    const fallbackBadge = v.used_fallback ? `<span class="badge fallback">proxy used</span>` : "";
+    html += `
+      <tr class="variant-row" onclick="toggleDetail(${idx})">
+        <td>▸</td>
+        <td>${v.final_rank}</td>
+        <td>${v.variant_id}</td>
+        <td>${v.stability_score} ${fallbackBadge}</td>
+        <td>${v.solubility_score}</td>
+        <td class="mono">${mutSummary}</td>
+      </tr>
+      <tr id="detail-${idx}" class="detail-row hidden">
+        <td colspan="6">
+          ${breakdownTable(v.model_breakdown)}
+          <strong>Mutated Sequence</strong>
+          <div class="seq">${highlightSequence(v.sequence, v.mutations)}</div>
+          <strong>Mutations</strong>
+          ${mutationsTable(v.mutations)}
+          <strong>Computed Properties</strong>
+          ${propsGrid(v.properties, v.deltas_vs_wild_type)}
+        </td>
+      </tr>`;
+  });
+  html += "</table>";
+  document.getElementById("results").innerHTML = html;
+}
+
+function toggleDetail(idx) {
+  const row = document.getElementById(`detail-${idx}`);
+  row.classList.toggle("hidden");
+}
+</script>
+
+</body>
+</html>
