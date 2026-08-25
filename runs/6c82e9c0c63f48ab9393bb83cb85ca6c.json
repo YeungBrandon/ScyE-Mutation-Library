@@ -1,0 +1,4516 @@
+{
+  "run_id": "6c82e9c0c63f48ab9393bb83cb85ca6c",
+  "created_at": "2026-08-25T09:22:11.642068+00:00",
+  "label": "1",
+  "base_sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+  "model": {
+    "id": "esm2_8m",
+    "label": "ESM2-8M"
+  },
+  "num_variants": 100,
+  "variants": [
+    {
+      "variant_id": "VAR-001",
+      "sequence": "MKKIWLALSGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 8,
+          "position_1based": 9,
+          "original_aa": "A",
+          "mutated_aa": "S",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41511.7,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 16.0,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 1
+    },
+    {
+      "variant_id": "VAR-002",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISPLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 92,
+          "position_1based": 93,
+          "original_aa": "N",
+          "mutated_aa": "P",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -2,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41478.71,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.7,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -16.99,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 2
+    },
+    {
+      "variant_id": "VAR-003",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDMGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIATGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIMIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 195,
+          "position_1based": 196,
+          "original_aa": "G",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 328,
+          "position_1based": 329,
+          "original_aa": "I",
+          "mutated_aa": "A",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -1,
+          "conservative": true
+        },
+        {
+          "position": 384,
+          "position_1based": 385,
+          "original_aa": "K",
+          "mutated_aa": "M",
+          "group_change": "Positively Charged -> Other",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41530.79,
+        "isoelectric_point": 4.73,
+        "instability_index": 18.72,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 35.09,
+        "isoelectric_point": -0.06
+      },
+      "final_rank": 3
+    },
+    {
+      "variant_id": "VAR-004",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGFKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 85,
+          "position_1based": 86,
+          "original_aa": "T",
+          "mutated_aa": "F",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41541.77,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.44,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 46.07,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 4
+    },
+    {
+      "variant_id": "VAR-005",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTMLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNYAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYAYQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 124,
+          "position_1based": 125,
+          "original_aa": "G",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 213,
+          "position_1based": 214,
+          "original_aa": "V",
+          "mutated_aa": "Y",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 311,
+          "position_1based": 312,
+          "original_aa": "L",
+          "mutated_aa": "Y",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41683.9,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.6,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 188.2,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 5
+    },
+    {
+      "variant_id": "VAR-007",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYCPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETMYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVKQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 67,
+          "position_1based": 68,
+          "original_aa": "I",
+          "mutated_aa": "C",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 190,
+          "position_1based": 191,
+          "original_aa": "A",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 243,
+          "position_1based": 244,
+          "original_aa": "T",
+          "mutated_aa": "K",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41572.87,
+        "isoelectric_point": 4.85,
+        "instability_index": 20.67,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.35
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 77.17,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 6
+    },
+    {
+      "variant_id": "VAR-008",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQRGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIDIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 324,
+          "position_1based": 325,
+          "original_aa": "Q",
+          "mutated_aa": "R",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": 1,
+          "conservative": false
+        },
+        {
+          "position": 384,
+          "position_1based": 385,
+          "original_aa": "K",
+          "mutated_aa": "D",
+          "group_change": "Positively Charged -> Negatively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41510.67,
+        "isoelectric_point": 4.74,
+        "instability_index": 18.34,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 14.97,
+        "isoelectric_point": -0.05
+      },
+      "final_rank": 7
+    },
+    {
+      "variant_id": "VAR-009",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLECPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 228,
+          "position_1based": 229,
+          "original_aa": "F",
+          "mutated_aa": "C",
+          "group_change": "Aromatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41451.67,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.7,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -44.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 8
+    },
+    {
+      "variant_id": "VAR-010",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVEQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 243,
+          "position_1based": 244,
+          "original_aa": "T",
+          "mutated_aa": "E",
+          "group_change": "Polar Uncharged -> Negatively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41523.71,
+        "isoelectric_point": 4.75,
+        "instability_index": 19.49,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 28.01,
+        "isoelectric_point": -0.04
+      },
+      "final_rank": 9
+    },
+    {
+      "variant_id": "VAR-011",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLAGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKGIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDRNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 123,
+          "position_1based": 124,
+          "original_aa": "T",
+          "mutated_aa": "A",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 321,
+          "position_1based": 322,
+          "original_aa": "E",
+          "mutated_aa": "G",
+          "group_change": "Negatively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 366,
+          "position_1based": 367,
+          "original_aa": "G",
+          "mutated_aa": "R",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41492.75,
+        "isoelectric_point": 4.9,
+        "instability_index": 18.25,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -2.95,
+        "isoelectric_point": 0.11
+      },
+      "final_rank": 10
+    },
+    {
+      "variant_id": "VAR-012",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISLLTSLAPSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 92,
+          "position_1based": 93,
+          "original_aa": "N",
+          "mutated_aa": "L",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 98,
+          "position_1based": 99,
+          "original_aa": "L",
+          "mutated_aa": "P",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41478.71,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.57,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -16.99,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 11
+    },
+    {
+      "variant_id": "VAR-013",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPFAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 63,
+          "position_1based": 64,
+          "original_aa": "S",
+          "mutated_aa": "F",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41555.8,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 60.1,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 12
+    },
+    {
+      "variant_id": "VAR-014",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGFGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 49,
+          "position_1based": 50,
+          "original_aa": "S",
+          "mutated_aa": "F",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41555.8,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 60.1,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 13
+    },
+    {
+      "variant_id": "VAR-015",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLKSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTHLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIPSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 201,
+          "position_1based": 202,
+          "original_aa": "Y",
+          "mutated_aa": "K",
+          "group_change": "Aromatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 296,
+          "position_1based": 297,
+          "original_aa": "Q",
+          "mutated_aa": "H",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 349,
+          "position_1based": 350,
+          "original_aa": "W",
+          "mutated_aa": "P",
+          "group_change": "Aromatic -> Polar Uncharged",
+          "blosum62": -4,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41380.62,
+        "isoelectric_point": 4.91,
+        "instability_index": 18.99,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.06,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.35
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -115.08,
+        "isoelectric_point": 0.12
+      },
+      "final_rank": 14
+    },
+    {
+      "variant_id": "VAR-017",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLPAGQNGTLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 70,
+          "position_1based": 71,
+          "original_aa": "C",
+          "mutated_aa": "P",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -3,
+          "conservative": true
+        },
+        {
+          "position": 76,
+          "position_1based": 77,
+          "original_aa": "S",
+          "mutated_aa": "T",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": 1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41503.7,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.35,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 8.0,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 15
+    },
+    {
+      "variant_id": "VAR-018",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVTDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 221,
+          "position_1based": 222,
+          "original_aa": "I",
+          "mutated_aa": "T",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41483.65,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.39,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -12.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 16
+    },
+    {
+      "variant_id": "VAR-019",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDTLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 115,
+          "position_1based": 116,
+          "original_aa": "S",
+          "mutated_aa": "T",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": 1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41509.73,
+        "isoelectric_point": 4.79,
+        "instability_index": 17.75,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 14.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 17
+    },
+    {
+      "variant_id": "VAR-020",
+      "sequence": "MKKIWLALAGLVLAFCASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDVSGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 15,
+          "position_1based": 16,
+          "original_aa": "S",
+          "mutated_aa": "C",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -1,
+          "conservative": true
+        },
+        {
+          "position": 332,
+          "position_1based": 333,
+          "original_aa": "I",
+          "mutated_aa": "V",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 3,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41497.74,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 2.04,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 18
+    },
+    {
+      "variant_id": "VAR-021",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSVYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 263,
+          "position_1based": 264,
+          "original_aa": "E",
+          "mutated_aa": "V",
+          "group_change": "Negatively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41465.72,
+        "isoelectric_point": 4.83,
+        "instability_index": 17.94,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -29.98,
+        "isoelectric_point": 0.04
+      },
+      "final_rank": 19
+    },
+    {
+      "variant_id": "VAR-024",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTTQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 380,
+          "position_1based": 381,
+          "original_aa": "G",
+          "mutated_aa": "T",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41539.75,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.63,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 44.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 20
+    },
+    {
+      "variant_id": "VAR-025",
+      "sequence": "MKKIWLALAGLILAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 11,
+          "position_1based": 12,
+          "original_aa": "V",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 3,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41509.73,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.09,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 14.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 21
+    },
+    {
+      "variant_id": "VAR-026",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQNGIITGDISGSLIKIATIGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 325,
+          "position_1based": 326,
+          "original_aa": "G",
+          "mutated_aa": "N",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 342,
+          "position_1based": 343,
+          "original_aa": "D",
+          "mutated_aa": "I",
+          "group_change": "Negatively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41550.82,
+        "isoelectric_point": 4.84,
+        "instability_index": 17.92,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 55.12,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 22
+    },
+    {
+      "variant_id": "VAR-027",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRAIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 33,
+          "position_1based": 34,
+          "original_aa": "G",
+          "mutated_aa": "A",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 0,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41509.73,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.03,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 14.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 23
+    },
+    {
+      "variant_id": "VAR-028",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLWGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLELASGITYGPDGNLYIANRARLAVTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 298,
+          "position_1based": 299,
+          "original_aa": "T",
+          "mutated_aa": "W",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 356,
+          "position_1based": 357,
+          "original_aa": "A",
+          "mutated_aa": "L",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -1,
+          "conservative": true
+        },
+        {
+          "position": 378,
+          "position_1based": 379,
+          "original_aa": "G",
+          "mutated_aa": "V",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -3,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41664.97,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.15,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 169.27,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 24
+    },
+    {
+      "variant_id": "VAR-029",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGHIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDWSGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 66,
+          "position_1based": 67,
+          "original_aa": "Y",
+          "mutated_aa": "H",
+          "group_change": "Aromatic -> Positively Charged",
+          "blosum62": 2,
+          "conservative": false
+        },
+        {
+          "position": 332,
+          "position_1based": 333,
+          "original_aa": "I",
+          "mutated_aa": "W",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41542.72,
+        "isoelectric_point": 4.85,
+        "instability_index": 19.91,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 47.02,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 25
+    },
+    {
+      "variant_id": "VAR-030",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVREYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 262,
+          "position_1based": 263,
+          "original_aa": "S",
+          "mutated_aa": "R",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41564.81,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.13,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 69.11,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 26
+    },
+    {
+      "variant_id": "VAR-031",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVARDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 302,
+          "position_1based": 303,
+          "original_aa": "Y",
+          "mutated_aa": "R",
+          "group_change": "Aromatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41488.71,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.02,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -6.99,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 27
+    },
+    {
+      "variant_id": "VAR-032",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLNSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 138,
+          "position_1based": 139,
+          "original_aa": "K",
+          "mutated_aa": "N",
+          "group_change": "Positively Charged -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41481.63,
+        "isoelectric_point": 4.73,
+        "instability_index": 18.82,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -14.07,
+        "isoelectric_point": -0.06
+      },
+      "final_rank": 28
+    },
+    {
+      "variant_id": "VAR-034",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVILDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAGAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 204,
+          "position_1based": 205,
+          "original_aa": "G",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        },
+        {
+          "position": 253,
+          "position_1based": 254,
+          "original_aa": "I",
+          "mutated_aa": "G",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41495.7,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.09,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 0.0,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 29
+    },
+    {
+      "variant_id": "VAR-035",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLPGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 123,
+          "position_1based": 124,
+          "original_aa": "T",
+          "mutated_aa": "P",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41491.71,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.3,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -3.99,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 30
+    },
+    {
+      "variant_id": "VAR-036",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGIGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVWQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 208,
+          "position_1based": 209,
+          "original_aa": "S",
+          "mutated_aa": "I",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 243,
+          "position_1based": 244,
+          "original_aa": "T",
+          "mutated_aa": "W",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41606.89,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.79,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 111.19,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 31
+    },
+    {
+      "variant_id": "VAR-037",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTEHGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 47,
+          "position_1based": 48,
+          "original_aa": "S",
+          "mutated_aa": "H",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41545.76,
+        "isoelectric_point": 4.85,
+        "instability_index": 17.68,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 50.06,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 32
+    },
+    {
+      "variant_id": "VAR-038",
+      "sequence": "MKKIWLALAGLVLAFSSSAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSTPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 16,
+          "position_1based": 17,
+          "original_aa": "A",
+          "mutated_aa": "S",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 1,
+          "conservative": false
+        },
+        {
+          "position": 247,
+          "position_1based": 248,
+          "original_aa": "V",
+          "mutated_aa": "T",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41513.67,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.09,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 17.97,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 33
+    },
+    {
+      "variant_id": "VAR-041",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCSASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 59,
+          "position_1based": 60,
+          "original_aa": "I",
+          "mutated_aa": "S",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41469.62,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -26.08,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 34
+    },
+    {
+      "variant_id": "VAR-042",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEKTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 264,
+          "position_1based": 265,
+          "original_aa": "Y",
+          "mutated_aa": "K",
+          "group_change": "Aromatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41460.7,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.82,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -35.0,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 35
+    },
+    {
+      "variant_id": "VAR-043",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRSDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 133,
+          "position_1based": 134,
+          "original_aa": "T",
+          "mutated_aa": "S",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": 1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41481.67,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.7,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -14.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 36
+    },
+    {
+      "variant_id": "VAR-044",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGCTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPVVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETITSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 156,
+          "position_1based": 157,
+          "original_aa": "L",
+          "mutated_aa": "C",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 234,
+          "position_1based": 235,
+          "original_aa": "D",
+          "mutated_aa": "V",
+          "group_change": "Negatively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 349,
+          "position_1based": 350,
+          "original_aa": "W",
+          "mutated_aa": "T",
+          "group_change": "Aromatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41384.62,
+        "isoelectric_point": 4.84,
+        "instability_index": 20.09,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -111.08,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 37
+    },
+    {
+      "variant_id": "VAR-045",
+      "sequence": "MKKIWLALAGLTLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 11,
+          "position_1based": 12,
+          "original_aa": "V",
+          "mutated_aa": "T",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41497.67,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 1.97,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 38
+    },
+    {
+      "variant_id": "VAR-046",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLIGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGMAYDPDGNLYALQHNISSEWKEIQQGGPITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 126,
+          "position_1based": 127,
+          "original_aa": "A",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -1,
+          "conservative": true
+        },
+        {
+          "position": 300,
+          "position_1based": 301,
+          "original_aa": "V",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": 1,
+          "conservative": false
+        },
+        {
+          "position": 327,
+          "position_1based": 328,
+          "original_aa": "I",
+          "mutated_aa": "P",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41553.8,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.13,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 58.1,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 39
+    },
+    {
+      "variant_id": "VAR-047",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIMTDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 340,
+          "position_1based": 341,
+          "original_aa": "A",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41555.82,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.53,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 60.12,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 40
+    },
+    {
+      "variant_id": "VAR-049",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDRDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 304,
+          "position_1based": 305,
+          "original_aa": "P",
+          "mutated_aa": "R",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41554.77,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 59.07,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 41
+    },
+    {
+      "variant_id": "VAR-050",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQVNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 286,
+          "position_1based": 287,
+          "original_aa": "S",
+          "mutated_aa": "V",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41507.75,
+        "isoelectric_point": 4.79,
+        "instability_index": 17.32,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 12.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 42
+    },
+    {
+      "variant_id": "VAR-052",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRIRLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 374,
+          "position_1based": 375,
+          "original_aa": "A",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41537.78,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 42.08,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 43
+    },
+    {
+      "variant_id": "VAR-054",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIIQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNFTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.52,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 81,
+          "position_1based": 82,
+          "original_aa": "G",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        },
+        {
+          "position": 132,
+          "position_1based": 133,
+          "original_aa": "R",
+          "mutated_aa": "F",
+          "group_change": "Positively Charged -> Aromatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41542.79,
+        "isoelectric_point": 4.73,
+        "instability_index": 18.23,
+        "instability_classification": "stable",
+        "gravy": -0.09,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 47.09,
+        "isoelectric_point": -0.06
+      },
+      "final_rank": 44
+    },
+    {
+      "variant_id": "VAR-055",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPLPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNASSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 269,
+          "position_1based": 270,
+          "original_aa": "Y",
+          "mutated_aa": "L",
+          "group_change": "Aromatic -> Nonpolar/Aliphatic",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 315,
+          "position_1based": 316,
+          "original_aa": "I",
+          "mutated_aa": "A",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41403.61,
+        "isoelectric_point": 4.79,
+        "instability_index": 17.68,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -92.09,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 45
+    },
+    {
+      "variant_id": "VAR-056",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGWDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVVTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 36,
+          "position_1based": 37,
+          "original_aa": "F",
+          "mutated_aa": "W",
+          "group_change": "Same (Aromatic)",
+          "blosum62": 1,
+          "conservative": true
+        },
+        {
+          "position": 248,
+          "position_1based": 249,
+          "original_aa": "P",
+          "mutated_aa": "V",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41536.75,
+        "isoelectric_point": 4.79,
+        "instability_index": 17.91,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 41.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 46
+    },
+    {
+      "variant_id": "VAR-058",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAHPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 107,
+          "position_1based": 108,
+          "original_aa": "G",
+          "mutated_aa": "H",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41575.79,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.32,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 80.09,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 47
+    },
+    {
+      "variant_id": "VAR-059",
+      "sequence": "MKKIWLALAGLVLQFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRPTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 13,
+          "position_1based": 14,
+          "original_aa": "A",
+          "mutated_aa": "Q",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 389,
+          "position_1based": 390,
+          "original_aa": "V",
+          "mutated_aa": "P",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41550.74,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.92,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 55.04,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 48
+    },
+    {
+      "variant_id": "VAR-060",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLP KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGHRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 143,
+          "position_1based": 144,
+          "original_aa": "G",
+          "mutated_aa": "P",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 344,
+          "position_1based": 345,
+          "original_aa": "T",
+          "mutated_aa": "H",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41571.8,
+        "isoelectric_point": 4.85,
+        "instability_index": 19.51,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 76.1,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 49
+    },
+    {
+      "variant_id": "VAR-061",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLHTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 152,
+          "position_1based": 153,
+          "original_aa": "S",
+          "mutated_aa": "H",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41545.76,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.42,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 50.06,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 50
+    },
+    {
+      "variant_id": "VAR-062",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLLNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTEAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 117,
+          "position_1based": 118,
+          "original_aa": "G",
+          "mutated_aa": "L",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        },
+        {
+          "position": 391,
+          "position_1based": 392,
+          "original_aa": "K",
+          "mutated_aa": "E",
+          "group_change": "Positively Charged -> Negatively Charged",
+          "blosum62": 1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41552.75,
+        "isoelectric_point": 4.69,
+        "instability_index": 19.3,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 57.05,
+        "isoelectric_point": -0.1
+      },
+      "final_rank": 51
+    },
+    {
+      "variant_id": "VAR-063",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGLNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFKQLTGVAYDPDGNLYALQHNISSEWKEIQQGGILTGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 197,
+          "position_1based": 198,
+          "original_aa": "G",
+          "mutated_aa": "L",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        },
+        {
+          "position": 295,
+          "position_1based": 296,
+          "original_aa": "T",
+          "mutated_aa": "K",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 328,
+          "position_1based": 329,
+          "original_aa": "I",
+          "mutated_aa": "L",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 2,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41578.88,
+        "isoelectric_point": 4.85,
+        "instability_index": 19.39,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 83.18,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 52
+    },
+    {
+      "variant_id": "VAR-064",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKDSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 87,
+          "position_1based": 88,
+          "original_aa": "T",
+          "mutated_aa": "D",
+          "group_change": "Polar Uncharged -> Negatively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41509.68,
+        "isoelectric_point": 4.74,
+        "instability_index": 19.09,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 13.98,
+        "isoelectric_point": -0.05
+      },
+      "final_rank": 53
+    },
+    {
+      "variant_id": "VAR-065",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVMDGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDANTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 25,
+          "position_1based": 26,
+          "original_aa": "A",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 281,
+          "position_1based": 282,
+          "original_aa": "P",
+          "mutated_aa": "A",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41529.78,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.82,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 34.08,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 54
+    },
+    {
+      "variant_id": "VAR-067",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAYAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANMARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 253,
+          "position_1based": 254,
+          "original_aa": "I",
+          "mutated_aa": "Y",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 373,
+          "position_1based": 374,
+          "original_aa": "R",
+          "mutated_aa": "M",
+          "group_change": "Positively Charged -> Other",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41520.73,
+        "isoelectric_point": 4.73,
+        "instability_index": 19.5,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 25.03,
+        "isoelectric_point": -0.06
+      },
+      "final_rank": 55
+    },
+    {
+      "variant_id": "VAR-068",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAWQNGSLLKIGQDGTKTSIISNLTSLAESPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 72,
+          "position_1based": 73,
+          "original_aa": "G",
+          "mutated_aa": "W",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 98,
+          "position_1based": 99,
+          "original_aa": "L",
+          "mutated_aa": "E",
+          "group_change": "Nonpolar/Aliphatic -> Negatively Charged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41640.82,
+        "isoelectric_point": 4.75,
+        "instability_index": 19.09,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 145.12,
+        "isoelectric_point": -0.04
+      },
+      "final_rank": 56
+    },
+    {
+      "variant_id": "VAR-070",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV ISDHFTQLTGVAYDPDGNLYALQHNISSEWKEIIQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 291,
+          "position_1based": 292,
+          "original_aa": "A",
+          "mutated_aa": "S",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 1,
+          "conservative": false
+        },
+        {
+          "position": 293,
+          "position_1based": 294,
+          "original_aa": "G",
+          "mutated_aa": "H",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 323,
+          "position_1based": 324,
+          "original_aa": "Q",
+          "mutated_aa": "I",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41576.82,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.08,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 81.12,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 57
+    },
+    {
+      "variant_id": "VAR-071",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIHSNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 177,
+          "position_1based": 178,
+          "original_aa": "I",
+          "mutated_aa": "H",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41519.68,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.91,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 23.98,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 58
+    },
+    {
+      "variant_id": "VAR-073",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSNYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 263,
+          "position_1based": 264,
+          "original_aa": "E",
+          "mutated_aa": "N",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41480.69,
+        "isoelectric_point": 4.83,
+        "instability_index": 18.13,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -15.01,
+        "isoelectric_point": 0.04
+      },
+      "final_rank": 59
+    },
+    {
+      "variant_id": "VAR-075",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDHKDGPCIASPSAGYIPLCAGQNWSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 53,
+          "position_1based": 54,
+          "original_aa": "G",
+          "mutated_aa": "H",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 75,
+          "position_1based": 76,
+          "original_aa": "G",
+          "mutated_aa": "W",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41704.95,
+        "isoelectric_point": 4.85,
+        "instability_index": 19.52,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 209.25,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 60
+    },
+    {
+      "variant_id": "VAR-076",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSIGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 203,
+          "position_1based": 204,
+          "original_aa": "V",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 3,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41509.73,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.82,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 14.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 61
+    },
+    {
+      "variant_id": "VAR-077",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWQGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 350,
+          "position_1based": 351,
+          "original_aa": "S",
+          "mutated_aa": "Q",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": 0,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41536.75,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 41.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 62
+    },
+    {
+      "variant_id": "VAR-078",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARPAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 376,
+          "position_1based": 377,
+          "original_aa": "L",
+          "mutated_aa": "P",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41479.66,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.57,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -16.04,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 63
+    },
+    {
+      "variant_id": "VAR-081",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVITRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 222,
+          "position_1based": 223,
+          "original_aa": "D",
+          "mutated_aa": "T",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41481.72,
+        "isoelectric_point": 4.84,
+        "instability_index": 18.79,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -13.98,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 64
+    },
+    {
+      "variant_id": "VAR-082",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIAFPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQKVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYAMQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 61,
+          "position_1based": 62,
+          "original_aa": "S",
+          "mutated_aa": "F",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 246,
+          "position_1based": 247,
+          "original_aa": "S",
+          "mutated_aa": "K",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 311,
+          "position_1based": 312,
+          "original_aa": "L",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": 2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41614.93,
+        "isoelectric_point": 4.85,
+        "instability_index": 15.68,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 119.23,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 65
+    },
+    {
+      "variant_id": "VAR-083",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGKPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 128,
+          "position_1based": 129,
+          "original_aa": "D",
+          "mutated_aa": "K",
+          "group_change": "Negatively Charged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41508.79,
+        "isoelectric_point": 4.91,
+        "instability_index": 18.21,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 13.09,
+        "isoelectric_point": 0.12
+      },
+      "final_rank": 66
+    },
+    {
+      "variant_id": "VAR-084",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLFGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDPSGIKNVAAVPQKVIDRNKLPFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 126,
+          "position_1based": 127,
+          "original_aa": "A",
+          "mutated_aa": "F",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 207,
+          "position_1based": 208,
+          "original_aa": "G",
+          "mutated_aa": "P",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 227,
+          "position_1based": 228,
+          "original_aa": "E",
+          "mutated_aa": "P",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41579.86,
+        "isoelectric_point": 4.83,
+        "instability_index": 20.05,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 84.16,
+        "isoelectric_point": 0.04
+      },
+      "final_rank": 67
+    },
+    {
+      "variant_id": "VAR-086",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGTGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 196,
+          "position_1based": 197,
+          "original_aa": "G",
+          "mutated_aa": "T",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41539.75,
+        "isoelectric_point": 4.79,
+        "instability_index": 17.57,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 44.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 68
+    },
+    {
+      "variant_id": "VAR-087",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVATGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGLDGNLYIANRARLAGTGQVIKIDPFVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.52,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 26,
+          "position_1based": 27,
+          "original_aa": "D",
+          "mutated_aa": "T",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 364,
+          "position_1based": 365,
+          "original_aa": "P",
+          "mutated_aa": "L",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 388,
+          "position_1based": 389,
+          "original_aa": "R",
+          "mutated_aa": "F",
+          "group_change": "Positively Charged -> Aromatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41488.75,
+        "isoelectric_point": 4.78,
+        "instability_index": 19.46,
+        "instability_classification": "stable",
+        "gravy": -0.08,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.37
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -6.95,
+        "isoelectric_point": -0.01
+      },
+      "final_rank": 69
+    },
+    {
+      "variant_id": "VAR-088",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVVKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 137,
+          "position_1based": 138,
+          "original_aa": "L",
+          "mutated_aa": "V",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41481.67,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.75,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -14.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 70
+    },
+    {
+      "variant_id": "VAR-089",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSFYSVGLDGSGIKNVAAVPQKVIQRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIAYRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 200,
+          "position_1based": 201,
+          "original_aa": "L",
+          "mutated_aa": "F",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 222,
+          "position_1based": 223,
+          "original_aa": "D",
+          "mutated_aa": "Q",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 372,
+          "position_1based": 373,
+          "original_aa": "N",
+          "mutated_aa": "Y",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41591.83,
+        "isoelectric_point": 4.84,
+        "instability_index": 19.19,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 96.13,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 71
+    },
+    {
+      "variant_id": "VAR-090",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCGASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 59,
+          "position_1based": 60,
+          "original_aa": "I",
+          "mutated_aa": "G",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41439.59,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.39,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -56.11,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 72
+    },
+    {
+      "variant_id": "VAR-091",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKNIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 321,
+          "position_1based": 322,
+          "original_aa": "E",
+          "mutated_aa": "N",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41480.69,
+        "isoelectric_point": 4.83,
+        "instability_index": 19.22,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -15.01,
+        "isoelectric_point": 0.04
+      },
+      "final_rank": 73
+    },
+    {
+      "variant_id": "VAR-092",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGTQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 103,
+          "position_1based": 104,
+          "original_aa": "E",
+          "mutated_aa": "T",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41467.69,
+        "isoelectric_point": 4.83,
+        "instability_index": 17.91,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -28.01,
+        "isoelectric_point": 0.04
+      },
+      "final_rank": 74
+    },
+    {
+      "variant_id": "VAR-093",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASYSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 62,
+          "position_1based": 63,
+          "original_aa": "P",
+          "mutated_aa": "Y",
+          "group_change": "Polar Uncharged -> Aromatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41561.76,
+        "isoelectric_point": 4.79,
+        "instability_index": 17.03,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 66.06,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 75
+    },
+    {
+      "variant_id": "VAR-094",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYATESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 44,
+          "position_1based": 45,
+          "original_aa": "V",
+          "mutated_aa": "A",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": 0,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41467.65,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.41,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -28.05,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 76
+    },
+    {
+      "variant_id": "VAR-095",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSVGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 39,
+          "position_1based": 40,
+          "original_aa": "G",
+          "mutated_aa": "V",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -3,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41537.78,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.09,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 42.08,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 77
+    },
+    {
+      "variant_id": "VAR-096",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEFASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 356,
+          "position_1based": 357,
+          "original_aa": "A",
+          "mutated_aa": "F",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41571.8,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 76.1,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 78
+    },
+    {
+      "variant_id": "VAR-097",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAILLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 120,
+          "position_1based": 121,
+          "original_aa": "Y",
+          "mutated_aa": "I",
+          "group_change": "Aromatic -> Nonpolar/Aliphatic",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41445.68,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.09,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -50.02,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 79
+    },
+    {
+      "variant_id": "VAR-098",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLELPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 228,
+          "position_1based": 229,
+          "original_aa": "F",
+          "mutated_aa": "L",
+          "group_change": "Aromatic -> Nonpolar/Aliphatic",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41461.68,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -34.02,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 80
+    },
+    {
+      "variant_id": "VAR-100",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGMDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.71,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.71
+      },
+      "mutations": [
+        {
+          "position": 233,
+          "position_1based": 234,
+          "original_aa": "P",
+          "mutated_aa": "M",
+          "group_change": "Polar Uncharged -> Other",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41529.78,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.79,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 34.08,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 81
+    },
+    {
+      "variant_id": "VAR-006",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPNGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFHSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFTIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 32,
+          "position_1based": 33,
+          "original_aa": "R",
+          "mutated_aa": "N",
+          "group_change": "Positively Charged -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 114,
+          "position_1based": 115,
+          "original_aa": "D",
+          "mutated_aa": "H",
+          "group_change": "Negatively Charged -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 184,
+          "position_1based": 185,
+          "original_aa": "A",
+          "mutated_aa": "T",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41505.7,
+        "isoelectric_point": 4.84,
+        "instability_index": 17.84,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 10.0,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 82
+    },
+    {
+      "variant_id": "VAR-016",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDICGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 333,
+          "position_1based": 334,
+          "original_aa": "S",
+          "mutated_aa": "C",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -1,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41511.77,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 16.07,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 83
+    },
+    {
+      "variant_id": "VAR-022",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGKNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSEGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVEEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 40,
+          "position_1based": 41,
+          "original_aa": "G",
+          "mutated_aa": "K",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 153,
+          "position_1based": 154,
+          "original_aa": "T",
+          "mutated_aa": "E",
+          "group_change": "Polar Uncharged -> Negatively Charged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 262,
+          "position_1based": 263,
+          "original_aa": "S",
+          "mutated_aa": "E",
+          "group_change": "Polar Uncharged -> Negatively Charged",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41636.87,
+        "isoelectric_point": 4.77,
+        "instability_index": 19.32,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 141.17,
+        "isoelectric_point": -0.02
+      },
+      "final_rank": 84
+    },
+    {
+      "variant_id": "VAR-023",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFSSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETFWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 114,
+          "position_1based": 115,
+          "original_aa": "D",
+          "mutated_aa": "S",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": 0,
+          "conservative": false
+        },
+        {
+          "position": 348,
+          "position_1based": 349,
+          "original_aa": "I",
+          "mutated_aa": "F",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": 0,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41501.71,
+        "isoelectric_point": 4.84,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 6.01,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 85
+    },
+    {
+      "variant_id": "VAR-033",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGEHAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHA",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 189,
+          "position_1based": 190,
+          "original_aa": "T",
+          "mutated_aa": "H",
+          "group_change": "Polar Uncharged -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 402,
+          "position_1based": 403,
+          "original_aa": "H",
+          "mutated_aa": "A",
+          "group_change": "Positively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41465.67,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.42,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -30.03,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 86
+    },
+    {
+      "variant_id": "VAR-039",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKGGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 80,
+          "position_1based": 81,
+          "original_aa": "I",
+          "mutated_aa": "G",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41439.59,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.91,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -56.11,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 87
+    },
+    {
+      "variant_id": "VAR-040",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLHVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTEQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 43,
+          "position_1based": 44,
+          "original_aa": "Y",
+          "mutated_aa": "H",
+          "group_change": "Aromatic -> Positively Charged",
+          "blosum62": 2,
+          "conservative": false
+        },
+        {
+          "position": 244,
+          "position_1based": 245,
+          "original_aa": "Q",
+          "mutated_aa": "E",
+          "group_change": "Polar Uncharged -> Negatively Charged",
+          "blosum62": 2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41470.65,
+        "isoelectric_point": 4.8,
+        "instability_index": 19.27,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -25.05,
+        "isoelectric_point": 0.01
+      },
+      "final_rank": 88
+    },
+    {
+      "variant_id": "VAR-048",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLNNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV EADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 29,
+          "position_1based": 30,
+          "original_aa": "S",
+          "mutated_aa": "N",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": 1,
+          "conservative": true
+        },
+        {
+          "position": 290,
+          "position_1based": 291,
+          "original_aa": "I",
+          "mutated_aa": "E",
+          "group_change": "Nonpolar/Aliphatic -> Negatively Charged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41538.68,
+        "isoelectric_point": 4.75,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 42.98,
+        "isoelectric_point": -0.04
+      },
+      "final_rank": 89
+    },
+    {
+      "variant_id": "VAR-051",
+      "sequence": "RKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGYNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTIQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 0,
+          "position_1based": 1,
+          "original_aa": "M",
+          "mutated_aa": "R",
+          "group_change": "Other -> Positively Charged",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 197,
+          "position_1based": 198,
+          "original_aa": "G",
+          "mutated_aa": "Y",
+          "group_change": "Nonpolar/Aliphatic -> Aromatic",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 380,
+          "position_1based": 381,
+          "original_aa": "G",
+          "mutated_aa": "I",
+          "group_change": "Same (Nonpolar/Aliphatic)",
+          "blosum62": -4,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41682.92,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.51,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 187.22,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 90
+    },
+    {
+      "variant_id": "VAR-053",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFRSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 37,
+          "position_1based": 38,
+          "original_aa": "D",
+          "mutated_aa": "R",
+          "group_change": "Negatively Charged -> Positively Charged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41536.8,
+        "isoelectric_point": 4.91,
+        "instability_index": 18.91,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 41.1,
+        "isoelectric_point": 0.12
+      },
+      "final_rank": 91
+    },
+    {
+      "variant_id": "VAR-066",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLHVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 43,
+          "position_1based": 44,
+          "original_aa": "Y",
+          "mutated_aa": "H",
+          "group_change": "Aromatic -> Positively Charged",
+          "blosum62": 2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41469.67,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.61,
+        "instability_classification": "stable",
+        "gravy": -0.12,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -26.03,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 92
+    },
+    {
+      "variant_id": "VAR-069",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGPAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 118,
+          "position_1based": 119,
+          "original_aa": "N",
+          "mutated_aa": "P",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -2,
+          "conservative": true
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41478.71,
+        "isoelectric_point": 4.79,
+        "instability_index": 19.3,
+        "instability_classification": "stable",
+        "gravy": -0.11,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -16.99,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 93
+    },
+    {
+      "variant_id": "VAR-072",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGYYETAFNPDGTDIISNPYAQAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 164,
+          "position_1based": 165,
+          "original_aa": "K",
+          "mutated_aa": "Y",
+          "group_change": "Positively Charged -> Aromatic",
+          "blosum62": -2,
+          "conservative": false
+        },
+        {
+          "position": 183,
+          "position_1based": 184,
+          "original_aa": "F",
+          "mutated_aa": "Q",
+          "group_change": "Aromatic -> Polar Uncharged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41511.66,
+        "isoelectric_point": 4.73,
+        "instability_index": 18.91,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.26,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 15.96,
+        "isoelectric_point": -0.06
+      },
+      "final_rank": 94
+    },
+    {
+      "variant_id": "VAR-074",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSCV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPQVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 287,
+          "position_1based": 288,
+          "original_aa": "N",
+          "mutated_aa": "C",
+          "group_change": "Same (Polar Uncharged)",
+          "blosum62": -3,
+          "conservative": true
+        },
+        {
+          "position": 388,
+          "position_1based": 389,
+          "original_aa": "R",
+          "mutated_aa": "Q",
+          "group_change": "Positively Charged -> Polar Uncharged",
+          "blosum62": 1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41456.68,
+        "isoelectric_point": 4.73,
+        "instability_index": 19.71,
+        "instability_classification": "stable",
+        "gravy": -0.1,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -39.02,
+        "isoelectric_point": -0.06
+      },
+      "final_rank": 95
+    },
+    {
+      "variant_id": "VAR-079",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADDKFDSLGNAYLLTGLAGDPTNRTPTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 111,
+          "position_1based": 112,
+          "original_aa": "I",
+          "mutated_aa": "D",
+          "group_change": "Nonpolar/Aliphatic -> Negatively Charged",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 134,
+          "position_1based": 135,
+          "original_aa": "D",
+          "mutated_aa": "P",
+          "group_change": "Negatively Charged -> Polar Uncharged",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41479.66,
+        "isoelectric_point": 4.79,
+        "instability_index": 18.98,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -16.04,
+        "isoelectric_point": 0.0
+      },
+      "final_rank": 96
+    },
+    {
+      "variant_id": "VAR-080",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGMNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAGDPDGNLYALQHNISSEWKIIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.52,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 197,
+          "position_1based": 198,
+          "original_aa": "G",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 302,
+          "position_1based": 303,
+          "original_aa": "Y",
+          "mutated_aa": "G",
+          "group_change": "Aromatic -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 321,
+          "position_1based": 322,
+          "original_aa": "E",
+          "mutated_aa": "I",
+          "group_change": "Negatively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41447.77,
+        "isoelectric_point": 4.83,
+        "instability_index": 17.23,
+        "instability_classification": "stable",
+        "gravy": -0.09,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -47.93,
+        "isoelectric_point": 0.04
+      },
+      "final_rank": 97
+    },
+    {
+      "variant_id": "VAR-085",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAWLLTGLAGDPTNRTDTVLKSPMLG KLYKVDLSTGGLTTLADFGKYETAFNPDGLDIISNPYAFAIKGETAYVVDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.52,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 120,
+          "position_1based": 121,
+          "original_aa": "Y",
+          "mutated_aa": "W",
+          "group_change": "Same (Aromatic)",
+          "blosum62": 2,
+          "conservative": true
+        },
+        {
+          "position": 141,
+          "position_1based": 142,
+          "original_aa": "D",
+          "mutated_aa": "M",
+          "group_change": "Negatively Charged -> Other",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 174,
+          "position_1based": 175,
+          "original_aa": "T",
+          "mutated_aa": "L",
+          "group_change": "Polar Uncharged -> Nonpolar/Aliphatic",
+          "blosum62": -1,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41546.9,
+        "isoelectric_point": 4.84,
+        "instability_index": 19.13,
+        "instability_classification": "stable",
+        "gravy": -0.09,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 51.2,
+        "isoelectric_point": 0.05
+      },
+      "final_rank": 98
+    },
+    {
+      "variant_id": "VAR-099",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFDSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVVDGGMNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPHTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQVIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.7,
+      "solubility_score": 0.53,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.7
+      },
+      "mutations": [
+        {
+          "position": 197,
+          "position_1based": 198,
+          "original_aa": "G",
+          "mutated_aa": "M",
+          "group_change": "Nonpolar/Aliphatic -> Other",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 242,
+          "position_1based": 243,
+          "original_aa": "V",
+          "mutated_aa": "H",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -3,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41607.85,
+        "isoelectric_point": 4.85,
+        "instability_index": 18.05,
+        "instability_classification": "stable",
+        "gravy": -0.13,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.36
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": 112.15,
+        "isoelectric_point": 0.06
+      },
+      "final_rank": 99
+    },
+    {
+      "variant_id": "VAR-057",
+      "sequence": "MKKIWLALAGLVLAFSASAASLTVVADGLSNPRGIGFDSGGNLYVTESGSGGDGKDGPCIASPSAGYIPLCAGQNGSLLKIGQDGTKTSIISNLTSLALSPSGEQAAGPADIKFGSLGNAYLLTGLAGDPTNRTDTVLKSPDLG KLYKVDLSTGGLTTLADFGKYETAFNPDGTDIISNPYAFAIKGETAYVHDGGGNSLYSVGLDGSGIKNVAAVPQKVIDRNKLEFPDLGPDVDPSALPVTQQSVPTGIAIAPDGSLTVSEYTYFPYPEGEARIFNVDPNTLQSNV IADGFTQLTGVAYDPDGNLYALQHNISSEWKEIQQGGIITGDISGSLIKIATDGTRETIWSGDGLEAASGITYGPDGNLYIANRARLAGTGQSIKIDPRVTKAAASHHHHHHH",
+      "stability_score": 0.69,
+      "solubility_score": 0.54,
+      "used_fallback": false,
+      "model_breakdown": {
+        "esm2_8m": 0.69
+      },
+      "mutations": [
+        {
+          "position": 114,
+          "position_1based": 115,
+          "original_aa": "D",
+          "mutated_aa": "G",
+          "group_change": "Negatively Charged -> Nonpolar/Aliphatic",
+          "blosum62": -1,
+          "conservative": false
+        },
+        {
+          "position": 193,
+          "position_1based": 194,
+          "original_aa": "V",
+          "mutated_aa": "H",
+          "group_change": "Nonpolar/Aliphatic -> Positively Charged",
+          "blosum62": -3,
+          "conservative": false
+        },
+        {
+          "position": 382,
+          "position_1based": 383,
+          "original_aa": "V",
+          "mutated_aa": "S",
+          "group_change": "Nonpolar/Aliphatic -> Polar Uncharged",
+          "blosum62": -2,
+          "conservative": false
+        }
+      ],
+      "properties": {
+        "molecular_weight": 41463.62,
+        "isoelectric_point": 4.91,
+        "instability_index": 19.48,
+        "instability_classification": "stable",
+        "gravy": -0.14,
+        "aromaticity": 0.07,
+        "secondary_structure_fraction": {
+          "helix": 0.27,
+          "turn": 0.39,
+          "sheet": 0.35
+        }
+      },
+      "deltas_vs_wild_type": {
+        "molecular_weight": -32.08,
+        "isoelectric_point": 0.12
+      },
+      "final_rank": 100
+    }
+  ]
+}
